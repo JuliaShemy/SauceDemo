@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class SauceDemoTest {
     @Test
-    public void LocatorSearch() {
+    public void locatorSearch() {
         System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.get("https://www.saucedemo.com/");
@@ -36,9 +36,6 @@ public class SauceDemoTest {
         browser.findElement(By.cssSelector("button"));
         browser.findElement(By.cssSelector("button.btn_primary"));
         browser.findElement(By.cssSelector("button[data-test='add-to-cart-sauce-labs-backpack']"));
-
         browser.quit();
-
-
     }
 }
